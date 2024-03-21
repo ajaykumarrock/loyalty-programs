@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRM</title>
+  <!--Bootstrap 5 CSS--->
+  <link rel="stylesheet" type="text/css" href="../../assets/Bootstrap5/css/bootstrap.css" />
+
+  <!--Bootstrap 5 JS--->
+  <script type="text/javascript" src="../../assets/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/de952d599f.js" crossorigin="anonymous"></script>
+
+  <!--datatables CSS--->
+  <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/datatables.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/buttons.dataTables.min.css" />
+
+  <!--Datatables js-->
+  <script type="text/javascript" src="../../assets/js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="./datatable/datatable.js"></script>
+  <script type="text/javascript" src="../../assets/js/dataTables.responsive.min.js"></script>
+
+  <!--Datatable dropdown----->
+  <script type="text/javascript" src="../../assets/js/datatables.pdfmake.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/datatables.vfs_fonts.js"></script>
+  <script type="text/javascript" src="../../assets/js/datatables.jszip.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/buttons.html5.min.js"></script>
+  <script type="text/javascript" src="../../assets/js/buttons.print.min.js"></script>
+
+  <!--Dropdown select-->
+  <link rel="stylesheet" href="../../assets/Bootstrap5/css/bootstrap-select.min.css" />
+  <script src="../../assets/Bootstrap5/js/bootstrap-select.min.js"></script>
+
+  <!--summernote_textarea-->
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+  <!-- CSS -->
+  <!-- validation -->
+  <script src="https://Login.loyalwings.com/assets/js/formValidation.min.js"></script>
+  <script src="https://Login.loyalwings.com/assets/js/bootstrap_validation.min.js"></script>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+
+
+  <style>
+    .help-block {
+
+      color: red;
+    }
+    .tbmargin{
+      margin-top: -20px;
+    }
+    .linehr {
+      margin: 0px !important;
+    }
+
+    .vendor {
+      padding: 7px !important;
+    }
+    .headingtxt{
+      margin-top: 15px !important;
+      margin-bottom: 5px !important;
+      font-size: 18px !important;
+    }
+    .heading1{
+      color:#D81B60;
+       margin-top: 13px !important;  
+       margin-bottom: 0px !important;  
+       margin-left: 0px !important;
+       font-weight: 500;
+    }
+    .tbmargin1{
+      margin-left: 5px; margin-right: 5px;
+    }
+    .tbmargin2{
+      margin-left: 10px; margin-right: 10px;
+    }
+    .move{
+      margin-top: 1%;
+    }
+    .enable{
+      margin-top: 27px;
+    }
+    .savecss{
+      margin-left: 6px;
+    }
+    .lineclr{
+      color: #d81b60;
+    }
+    .evenspace{
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+    .mgtopr{
+      margin-top: 13px;
+    }
+    .mgtop{
+      margin-top: 2px;
+    }
+    .redemp{
+      margin-top: 3px;
+    }
+    .minusbtns{
+        margin-left: 4%;
+    }
+    @media only screen and (max-width: 554px) {
+
+
+      .tbmargin1{
+      margin-left: 0px; margin-right: 0px;
+    }
+  }
+  @media only screen and (max-width: 554px) {
+
+
+    .child{
+        margin-top: -8px;
+       
+    }
+  }
+  @media only screen and (max-width: 554px) {
+
+
+    .enable{
+        margin-top: 9px;
+      
+    }
+  }
+  .purchasegrp{
+    margin-top: 1px !important;
+  }
+  .padtop29{
+    margin-top: 32px;
+  }
+  .enablecss{
+    margin-top: 25px;
+  }
+  .savecss1{
+    margin-left: 6px;
+  }
+  
+  </style>
+
+
+</head>
+
+<body id="wrapper">
+  <!--GENERAL INFORMATION TAB-->
+  <div class="container-fluid">
+  <div class="tblcontainer">
+  
+      <div class="row tbmargin1" >
+        <div class="col-md-12">
+          <h5 class="contracthdr headingtxt"
+            >
+          Create
+            Loyalty
+            rule
+          </h5>
+
+        </div>
+      </div>
+
+      
+      <div class="row vendcarmt tbmargin1" >
+        <div class="col-md-12 ">
+          <hr class="fileline">
+          <div class="desktop">  
+            <div class="scroll-images custml toptea tbmargin">
+              <div class="child mb-0 ">
+                <button class="tablinks tb-links active " type="button" onclick="openTab(event, 'profile')"><i
+                    class="fa fa-align-left redemp"></i>
+                  General
+                  Information
+                </button>
+              </div>
+              <div class="child mb-0">
+                <button class="tablinks tb-links" type="button" onclick="openTab(event, 'proposals')">
+                  <i class="fa fa-calendar move"></i>
+                  Point
+                  Calculation</button>
+              </div>
+              <div class="child mb-0">
+                <button class="tablinks tb-links" type="button" onclick="openTab(event, 'details')">
+                  <i class="fa fa-address-card-o move redemp"></i>Redemp
+                  Calculation</button>
+              </div>
+            </div>
+          </div>
+         
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false" >
+            <div class="carousel-inner scroll-images">
+
+              <div class="carousel-item active" style="text-align: center;">
+                <div class="child mb-0" style="height:auto;">
+                  <button class="tablinks active tabresact vendor" style="width:70%" type="button"
+                    onclick="openTab(event, 'profile')"> <i class="fa fa-align-left "
+                      style=" margin-top: 4px !important; margin-right: 5px; margin-bottom: 5px; margin-left: 0px;"></i>General
+                    Information</button>
+                </div>
+              </div>
+              <div class="carousel-item" style="text-align: center;">
+                <div class="">
+                  <div class="child mb-0" style="height:auto;">
+                    <button class="tablinks tabresact vendor" style="width:70%" type="button"
+                      onclick="openTab(event, 'proposals')"><i class="fa fa-calendar"
+                        style=" margin-top: 4px !important; margin-right: 5px; margin-bottom: 5px; margin-left: 0px;"></i>
+                      Point
+                      Calculation</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" style="text-align: center;">
+                <div class="">
+                  <div class="child mb-0" style="height:auto;">
+                    <button class="tablinks tabresact vendor" style="width:70%" type="button"
+                      onclick="openTab(event, 'details')"><i class="fa fa-address-card-o redemp"
+                        style=" margin-top: 4px !important; margin-right: 5px; margin-bottom: 0px; margin-left: 0px;"></i>
+                      Redemp Calculation</button>
+                  </div>
+                </div>
+              </div>
+
+              <button id="prevButton" class="carousel-control-prev" style="margin-top: 0px;" type="button"
+                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <i class="bi bi-chevron-left icon" style="color:black;font-weight: bold;"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button id="nextButton" class="carousel-control-next" style="margin-top: 0px;" type="button"
+                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <i class="bi bi-chevron-right icon" style="color:black;font-weight:bold"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+          </div>
+          <hr class="fileline  linehr linemedi">
+      </div>
+    </div>
+   
+      
+          <!--...................................... first page .......................................-->
+         
+            <div id="profile" class="tabcontent mtgb tbmargin2" style="display: block; ">
+              <form action="" id="form">
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="purchasegrp">
+                    <label for="tags" class="purchaseinfo"><span class="aster">* </span>Name</label>
+                    <input type="text" class="purchaseselects form-control " name="val">
+                  </div>
+                </div>
+                <div class="col-md-2 enable">
+                  <div class="purchasegrp">
+                    <div class="purchaseinfo">
+                      <input type="checkbox" id="enable" name="enable" checked="" value="1">
+                      <label for="enable">Enable </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-md-6">
+                  <div class="purchasegrp">
+                    <label for="tags" class="purchaseinfo mb-1">Client Group</label>
+                    <select class="selectpicker form-control" name="currency" data-live-search="true">
+                      <option value="36">Allah Waly Hill</option>
+                      <option value="38">LADIES Good</option>
+                      <option value="41">MEMBER</option>
+                      <option value="41">revenue</option>
+                      <option value="41">saleem</option>
+                      <option value="41">Test</option>
+                      <option value="41">UNIT</option>
+                      <option value="41">Zarema</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 ">
+                  <div class="purchasegrp">
+                    <label for="unitname" class="purchaseinfo mb-1">Customer</label>
+                    <select class="selectpicker form-control" data-name="name" multiple data-actions-box="true"
+                      data-live-search="true">
+                      <option value="1">102</option>
+                      <option value="2">123123</option>
+                      <option value="3">Three</option>
+                      <option value="4">Abc</option>
+                      <option value="1">Ah Bee</option>
+                      <option value="2">Ah Mo</option>
+                      <option value="3">Ah Nee</option>
+                      <option value="4">As-TESt</option>
+                      <option value="1">asd</option>
+                      <option value="2">asdas</option>
+                      <option value="3">BiLL BILL</option>
+                      <option value="4">c cx cvcx</option>
+                      <option value="3">Company</option>
+                      <option value="4">Deneme A.S</option>
+                      <option value="1">Empresa de prueba Tecnotic</option>
+                      <option value="2">CL</option>
+                      <option value="3">fsdf</option>
+                      <option value="4">Howie</option>
+                    </select>
+                    </button>
+
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-md-6 ">
+                  <div class="purchasegrp">
+                    <label class="purchaseinfo"><span class="aster">* </span>Start Date</label>
+                    <input type="date" id="email" class="purchaseselects form-control" name="val">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="purchasegrp">
+                    <label class="purchaseinfo"><span class="aster">* </span>End Date</label>
+                    <input type="date" id="email" class=
+                    "purchaseselects form-control" name="val">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-md-12">
+                  <div class="purchasegrp">
+                    <label class="emailpro">Description</label>
+                    <textarea class="textdesc  " rows="4"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"></div>
+                <div class="modal-footer taskfooter savecss">
+                  <button type="submit" class="tasksave1">SAVE</button>
+                </div>
+              </div>
+              </form>
+            </div>
+
+          <!--...................................... Second page .......................................-->
+         
+            <div id="proposals" class="tabcontent mtgb tbmargin2 evenspace">
+              <form action="" id="newform">
+              <div>
+                <p class="heading1">
+                  When paying invoice
+                </p>
+                <hr class="bolt lineclr">
+              </div>
+              <div class=" row ">
+                <div class=" col-md-6">
+                  <div class="purchasegrp">
+                    <label class="purchaseinfo mb-1" name="newval"> <span class="aster">* </span> Rule Base</label>
+                    <select class="selectpicker form-control" name="currency"  name="newval">
+                      <option value="35"></option>
+                      <option value="36">Card total</option>
+                      <option value="38">Product category</option>
+                      <option value="41">Product</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="purchasegrp">
+                    <label class="purchaseinfo mb-1"><span class="aster">* </span>Minimum purchase</label>
+                    <div class=" dropdown-with-icon " style="border-radius:4px 0px 0px 4px;">
+                      <input type="text" id="concode" class="selectpicker form-control text-end" name="newval">
+                      <button type="text" class="select-container dropdownplusbtn"
+                        style="background-color: rgb(235, 229, 229);">
+                        <div class="dropdown">
+                          <span class="discount-type-selected ">
+                            USD </span>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+           
+              <div class="col-md-6">
+                <div class="purchasegrp">
+                  <label class="purchaseinfo"> Customer will be awarded (...) Point(s) 
+                  </label>
+                  <input type="number" class="purchaseselects form-control">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="purchasegrp">
+                  <label class="purchaseinfo mb-1"><span class="aster"></span>for a purchase of every</label>
+                  <div class=" dropdown-with-icon " style="border-radius:4px 0px 0px 4px;">
+                    <input type="text" id="concode" class="selectpicker form-control text-end" name="newval">
+                    <button type="text" class="select-container dropdownplusbtn"
+                      style="background-color: rgb(235, 229, 229);">
+                      <div class="dropdown">
+                        <span class="discount-type-selected ">
+                          USD </span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+             
+
+
+
+              <div class="row">
+                <div class="col-md-12">
+              <div>
+                <p  class="heading1">
+                  Other actions
+                </p>
+                <hr class="bolt lineclr">
+              </div>
+              </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-md-6">
+                  <div class="purchasegrp">
+                    <label class="purchaseinfo"> Account creation point <i class="fa fa-question-circle"
+                        style="margin-left: 0px !important;"></i>
+                    </label>
+                    <input type="number" class="purchaseselects form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="purchasegrp">
+                    <label class="purchaseinfo"> Birthday points
+                      <i class="fa fa-question-circle" style="margin-left: 0px !important;"></i></label>
+                    <input type="number" class="purchaseselects form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-lg-4"></div>
+                <div class="modal-footer taskfooter savecss1">
+                  <button type="submit" class="tasksave1">SAVE</button>
+                </div>
+              </div>
+            </form>
+            </div>
+            
+          
+
+
+          <!--...................................... third page .......................................-->
+         
+            <div id="details" class="tabcontent mtgb tbmargin2" >
+              <form action="" id="thirdform">
+              <div class="row" style="padding-bottom: 2px !important;">
+                <div class="col-md-2">
+                  <div class="purchasegrp">
+                    <label class="purchaseinfo mb-1" name="third"><span class=" aster">* </span>Redeem
+                      type</label>
+                    <select class="selectpicker form-control" name="currency" data-live-search="true" name="third">
+                      <option value="36">Card total</option>
+                      <option value="38">Product category</option>
+                      <option value="41">Product</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="purchasegrp">
+                    <label class="purchaseinfo"><span class=" aster"> </span>Minimum Point to
+                      redeem</label>
+                    <input type="number" class="purchaseselects form-control" name="third">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="purchasegrp">
+                    <label class="purchaseinfo mb-1"><span class=" aster">* </span> Max amount received <i
+                        class="fa fa-question-circle"
+                        style="margin-left: 0px !important; margin-top: 0px !important;"></i>
+                    </label>
+                    <div class=" dropdown-with-icon " style="border-radius:4px 0px 0px 4px;">
+                      <input type="number" class="selectpicker form-control" name="third">
+                      <button type="text" class="select-container dropdownplusbtn">
+                        <div class="dropdown">
+                          <span class="discount-type-selected ">
+                            % </span>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 padtop29 mgtopr">
+                  <div class="form-group">
+                    <div class="checkbox checkbox-primary pull-right">
+                      <input type="checkbox" id="redeem_portal" name="redeem_portal" value="1">
+                      <span id="redeem_portal">Redeem in Portal(Omni-Channel Sale Module)</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 padtop29 mgtopr">
+                  <div class="form-group">
+                    <div class="checkbox checkbox-primary">
+                      <input type="checkbox" id="redeem_portal" name="redeem_portal" value="2">
+                      <span id="redeem_portal">Redeem in POS(Omni-Channel Sale Module)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div id="newparent" class="banking-parent row">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="purchasegrp">
+                      <label class="purchaseinfo"> <span class=" aster">* </span>Rule name
+                      </label>
+                      <input type="text" class="purchaseselects form-control" name="third">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="purchasegrp">
+                      <label class="purchaseinfo"><span class=" aster">* </span>Point from
+                      </label>
+                      <input type="number" class="purchaseselects form-control" placeholder="Point from" name="third">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="purchasegrp">
+                      <label class="purchaseinfo"><span class=" aster">* </span>Point to
+                      </label>
+                      <input type="number" class="purchaseselects form-control" placeholder="Point to" name="third">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="purchasegrp">
+                      <label class="purchaseinfo"><span class=" aster">* </span> Point weight
+                      </label>
+                      <input type="number" class="purchaseselects form-control" placeholder=" Point weight" name="third">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="purchasegrp">
+                      <label class="purchaseinfo mb-1" name="third"><span class=" aster">* </span> Status
+                      </label>
+                      <select class="selectpicker form-control" name="currency" data-live-search="true" name="third">
+                        <option value="36">Enable</option>
+                        <option value="38">Disable</option>
+
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1 padtop25 mgtop">
+                    <div class="purchasegrp">
+                      <button id="add_btn" name="add" class="ctctgrnbtn banking-plus-btn" data-ticket="true"
+                        type="button"><i class="fa fa-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
+
+              <div class="row mt-4">
+                <div class="col-md-4"></div>
+                <div class="modal-footer taskfooter">
+                  <button type="submit" class="tasksave1">SAVE</button>
+                </div>
+              </div>
+              </form>
+            </div>
+          
+       
+
+  </div>
+  </div>
+
+  <script>$(document).ready(function () {
+    $("#add_btn").click(function () {
+      $("#newparent").append(' <div id="newparent1" class="parent row"><div class="col-md-3"><div class="purchasegrp"><label class="purchaseinfo"> <span class=" aster"> </span></label><input type="text" class="purchaseselects form-control" name="third"></div></div><div class="col-md-2"><div class="purchasegrp"><label class="purchaseinfo"><span class=" aster"> </span></label><input type="number" class="purchaseselects form-control" placeholder="Point from" name="third"></div></div><div class="col-md-2"><div class="purchasegrp"><label class="purchaseinfo"><span class=" aster"> </span></label><input type="number" class="purchaseselects form-control" placeholder="Point to" name="third"></div></div><div class="col-md-2"><div class="purchasegrp"><label class="purchaseinfo"><span class=" aster"> </span> </label><input type="number" class="purchaseselects form-control" placeholder=" Point weight" name="third"></div></div><div class="col-md-2 enablecss"><div class="purchasegrp"><label class="purchaseinfo mb-1" name="third"><span class=" aster"> </span>  </label><select class="selectpicker form-control" name="currency" data-live-search="true" name="third"><option value="36">Enable</option><option value="38">Disable</option></select></div></div><div class="col-md-1 padtop25"><div class="purchasegrp"><button id="r1" name="add" class="minusbtns setmartp" data-ticket="true type="button"><i class="fa fa-minus"></i></button></div></div></div></div>');
+      $('.selectpicker').selectpicker('reresh')
+    });
+    $(document).on('click', '#r1', function () {
+      $(this).closest('#newparent1').remove();
+    });
+  });
+</script>
+      <script>
+        $('#form').formValidation({
+          framework: 'bootstrap',
+          fields: {
+            val: {
+              validators: {
+                notEmpty: {
+                  message: 'This field is required'
+                }
+              }
+            },
+
+
+          }
+        })
+
+      </script>
+      <script>
+        function openTab(evt, tabName) {
+          // Declare all variables
+          var i, tabcontent, tablinks;
+
+          // Get all elements with class="tabcontent" and hide them
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        var carousel = document.getElementById("carouselExampleIndicators");
+
+        carousel.addEventListener("slid.bs.carousel", function (event) {
+          var activeSlideIndex = event.to;
+          if (activeSlideIndex === 0) {
+
+            openTab(event, 'profile');
+
+          }
+          else if (activeSlideIndex === 1) {
+
+            openTab(event, 'proposals');
+
+          }
+          else if (activeSlideIndex === 2) {
+
+            openTab(event, 'details');
+
+          }
+        });
+
+
+
+      </script>
+
+      <script>
+        $('#newform').formValidation({
+          framework: 'bootstrap',
+          fields: {
+            newval: {
+              validators: {
+                notEmpty: {
+                  message: 'This field is required'
+                }
+              }
+            },
+
+
+          }
+        })
+
+      </script>
+
+      <script>
+        $('#thirdform').formValidation({
+          framework: 'bootstrap',
+          fields: {
+            third: {
+              validators: {
+                notEmpty: {
+                  message: 'This field is required'
+                }
+              }
+            },
+
+
+          }
+        })
+
+      </script>
+  <script>$(document).ready(function () {
+    $("#sec_btn").click(function () {
+      $("#parent").append('<div id="parent1" class="parent row"><div class="col-md-7"><div class="purchasegrp"><label class="purchaseinfo mb-1" name="newval"> <span class=" aster">* </span>Product</label><select class="selectpicker form-control" name="currency" data-live-search="true" name="newval"><option value="36" data-subtext="GHS">GHS</option><option value="38" data-subtext="MAD">MAD</option><option value="41" data-subtext="¢">GHS</option></select></div></div><div class="col-md-4"><div class="purchasegrp"><label class="purchaseinfo" name="newval"><span class=" aster">* </span> Loyalty Point</label><input type="number" class="purchaseselects form-control" placeholder="Status" name="newval"></div></div><div class="col-md-1 padtop25 mt-1"><div class="purchasegrp"><button id="remove_btn"  class="minusbtns  banking-min-btn" data-ticket="true" type="button"><i class="fa-solid fa-minus"></i></button></div></div></div></div>  ');
+      $('.selectpicker').selectpicker('reresh')
+    });
+    $(document).on('click', '#remove_btn', function () {
+      $(this).closest('#parent1').remove();
+    });
+  });
+</script>
+
+
+
+
+
+
+
+      <script type="text/javascript">
+        document.getElementById("toggle").onclick = function () {
+          document.getElementById("profile-content").style.display = "none";
+          document.getElementById("edit-content").style.display = "block";
+
+        }
+      </script>
+<!--Multiselect-->
+<script>
+  const dropdowns = document.querySelectorAll('.multiselect');
+
+  dropdowns.forEach(dropdown => {
+    const inputBox = document.createElement('input');
+    inputBox.type = 'hidden';
+    inputBox.classList.add('selected-values');
+    name = dropdown.getAttribute('data-name');
+    inputBox.setAttribute("name", name);
+    dropdown.after(inputBox);
+
+    dropdown.addEventListener('change', () => {
+      const selectedOptions = Array.from(dropdown.selectedOptions).map(option => option.value);
+      inputBox.value = selectedOptions.join(', ');
+    });
+  });
+</script>
+</body>
+
+</html>

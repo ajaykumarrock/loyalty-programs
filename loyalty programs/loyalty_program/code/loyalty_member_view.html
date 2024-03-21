@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRM</title>
+    <!--Bootstrap 5 CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/Bootstrap5/css/bootstrap.css">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!--datatables CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/buttons.dataTables.min.css">
+
+    <script src="https://kit.fontawesome.com/de952d599f.js" crossorigin="anonymous"></script>
+    <!--Bootstrap 5 JS--->
+    <script type="text/javascript" src="../../assets/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+    <!--Bootstrap Dropdown Js--->
+    <script type="text/javascript" src="../../assets/Bootstrap5/js/popper.min.js"></script>
+
+    <!--Datatables js-->
+    <script type="text/javascript" src="../../assets/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./datatable/datatable.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.responsive.min.js"></script>
+
+    <!--Datatable dropdown----->
+    <script type="text/javascript" src="../../assets/js/datatables.pdfmake.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.vfs_fonts.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.jszip.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.print.min.js"></script>
+
+    <!--Dropdown select-->
+    <link rel="stylesheet" href="../../assets/Bootstrap5/css/bootstrap-select.min.css">
+    <script src="../../assets/Bootstrap5/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .part1{
+            background: #fff;
+    margin: 18px 0 25px;
+    width: 100%;
+    float: left;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 2px 2px rgba(0,0,0,.16);
+    padding: 25px 35px;
+    border-radius: 5px;
+        }
+        .part1-1{
+            float: left;
+    width: 100%;
+    margin-top: 5px;
+    padding-top: 5px;
+        }
+        .part1-lbl{
+            margin-bottom: 10px !important; padding-inline-start: 10px !important;
+        }
+        .part1-lbl-text{
+            font-size: 18px;
+        }
+        .part1-lbl-text1{
+            font-size: 14px;
+        }
+        .part1-lbl-text2{
+            color: #a7a7a7;
+    font-size: 13px;
+    text-transform: uppercase;
+        }
+        .part1-lbl-text3{
+            font-size: 15px;
+        }
+        .aclr{
+            color: #03A9F4;
+    text-decoration: none;
+        }
+        .prt1{
+            width: 101.6%;
+        }
+        .edtbtn{
+            margin-left: 85.9%;
+          
+        }
+        .mdlft{
+            margin-left: -2%;
+        }
+        .mrglft{
+            margin-left: 250%;
+        }
+        .bgaclr{
+            color: #008ECE;
+        }
+        .hrbtns{
+            background-color: #28B8DA !important;
+        }
+        @media only screen and (max-width: 554px) {
+
+
+            .edtbtn{
+                margin-left: -10px;
+            
+            }
+        }
+        @media only screen and (max-width: 554px) {
+
+
+            .ptaward{
+                margin-left: -1px;
+            
+            }
+        }
+        .hrbtns{
+            font-size: 14px !important;
+            padding: 6px 12px !important;
+        }
+        .purchaseinfosb{
+            margin-top: -14px;
+        }
+        
+            
+
+    </style>
+</head>
+
+<body id="wrapper">
+    <!-------------------------------------------first col -Header------------------------------------>
+    
+        <div class="container-fluid ">
+            <div class="container-T  tblcontainer my-4 px-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="part1">
+                            <div class="row">
+                              
+                                <div class="col-md-6 border-end ">
+                                   
+                                        <label  class="purchaseinfo part1-lbl">2023-03-27
+                                        </label>
+                                        <br>
+                                        <label   class="purchaseinfo part1-lbl part1-lbl-text"> BUSINESS TAXES
+                                        </label>
+                                        <br>
+                                        <label class="purchaseinfo part1-lbl part1-lbl-text">Any Personal Tax Filed Via
+                                            PlusMoreUsa
+                                        </label>
+                                        <br>
+                                        <label class="purchaseinfo part1-lbl aclr"> <a href="#" class="bgaclr">GTS
+                                            Solutions</a>
+                                        </label>
+                                   
+
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="col-md-2 edtbtn">
+                                        <button type="button" class="hrbtns finishedbtn mt-0 mb-3 pull-right"
+                                        onclick="window.location.href = 'loyalty_mem_editform.html';">EDIT
+                                    </button>
+                                    </div>
+                                    <div class="row">
+                                <div class="col-md-10 mdlft">
+                                    <label  class="purchaseinfo part1-lbl part1-lbl-text2"> MINIMUM
+                                        POINT TO
+                                        REDEEM
+                                    </label>
+                                    <br>
+                                    <label  class="purchaseinfo part1-lbl "> 500
+                                    </label>
+                                   
+                                </div>
+                               
+                                </div>                          
+                                <div class="row">
+                                <div class="col-md-6">
+                                    <label  class="purchaseinfo part1-lbl part1-lbl-text2"> START DATE 
+                                    </label>
+                                    <br>
+                                    <label  class="purchaseinfo part1-lbl "> 2023-08-08
+                                    </label>
+                                    
+                                    
+                                    
+                                  
+                                   
+                                </div>
+                                <div class="col-md-6">
+                                  
+                                    <label  class="purchaseinfo part1-lbl part1-lbl-text2" > END DATE 
+                                    </label>
+                                    <br> 
+                                    <label  class="purchaseinfo part1-lbl "> 2023-08-08
+                                    </label>
+                                   
+                                    <br>
+                                    
+                                    
+                                  
+                                   
+                                </div>
+                                </div>
+                                
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <hr class="fileline" style="margin-top: 10px;">
+                            <div class="part1-1">
+                                <div class="row">
+                                    <div class="col-md-3 border-end">
+                                        <label class="purchaseinfo part1-lbl part1-lbl-text1 aclr "
+                                       >Rule
+                                        base</label>
+                                        <br>
+                                        <label class="purchaseinfo part1-lbl part1-lbl-text3 "
+                                        > <b>Product</b></label>
+                                         
+                                        
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="purchaseinfo part1-lbl part1-lbl-text1 aclr "
+                                        >Program Details</label>
+                                         <br>
+                                         <label class="purchaseinfo part1-lbl part1-lbl-text3 mrglft ptaward">
+                                             <b>Point awarded:0</b></label>
+                                          <br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <p class="purchaseinfosb part1-lbl">Receive
+                                            points corresponding to each product in the
+                                            invoice.
+                                        </p>
+                                    </div>
+                                </div>
+                              
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ....................second col........................ -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="part1 prt1">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="purchaseinfo part1-lbl part1-lbl-text2"
+                                       >Qualified Customers</label>
+                                        <br>
+                                </div>
+                            </div>
+                            <hr class="fileline">
+                            <div class="row">
+                            <div class="col-md-12">
+                            <div class="demo-html mt-0">
+                                <table class="example display dataTable display responsive nowrap tblalign table bordered" style="width: 100%">
+                                    <thead class="theadrow">
+                                        <tr>
+                                            <th class="select-checkbox sorting_disabled" >
+                                                Customer
+                                            </th>
+                                            <th class="select-checkbox sorting_disabled" >
+                                                Memberships
+                                            </th>
+                                            <th class="sorting sorting_asc" >
+                                                loyalty Point
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>A</td>
+                                            <td>2 years</td>
+                                            <td>30</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            var table = $('.example').DataTable({
+                language: { lengthMenu: '_MENU_' },
+                rowReorder: {
+                    selector: 'td:nth-child(2)'
+                },
+                responsive: true,
+                dom: 'Blfrtip',
+                buttons: [
+                    {
+                        text: 'EXPORT',
+                        extend: 'collection',
+                        buttons: ['excel', 'csv', 'pdf', 'print'],
+                        className: 'px-3'
+                    },
+
+
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>

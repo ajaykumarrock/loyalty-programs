@@ -1,0 +1,188 @@
+*{
+  
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13.6px;
+}
+.nwsec{
+    padding: 19px 25px 19px 25px;
+    background-color: #e3e8ee;
+}
+
+.sendiv{
+
+  margin-top: 10px;
+  
+}
+main {
+
+    padding: 0px 29px 19px 29px;
+    background-color: #e3e8ee;
+   
+    
+}
+
+.contraaa{
+ 
+    padding: 12px 10px 12px 14px;
+    border-radius: 4px;
+    height: 900px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.contrs{
+background-color: #ffffff;
+height: auto;
+padding: 5px;
+border-radius: 4px;
+
+}
+
+.tickWiEml{
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: rgb(70, 70, 70);
+  border: 1px solid rgb(194, 192, 192);
+}
+
+.div2{
+  height: 400px;
+}
+
+.bxdiv{
+ 
+  width: 200px;
+  
+}
+.box2s{
+  border: 1px solid #dce1ef;
+  padding: 15px;
+  border-radius: 3px;
+  background: #f9f9f9;
+}
+
+
+.plusbtnn{
+  background-color: #84c529;
+  border: none;
+  border: 1px solid transparent;
+  color: white;
+  padding: 0px 13px 0px 11px;
+  font-size: 20px;
+  margin-top: -33px;
+
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+
+    transition: 0.3s;
+  }
+  
+
+
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 7px 0px 5px 0px;
+  
+    border-top: none;
+  }
+  .demigme{
+    width: 200px;
+    height: 200px;
+
+  }
+
+/* Set the container width to 100% */
+.contrs {
+    width: 100%;
+    }
+  
+    .tab {
+    overflow: auto;
+    white-space: nowrap; 
+    }
+    
+ 
+    @media only screen and (max-width: 767px) {
+    .tab {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: white;
+    }
+    
+    .tab button {
+    flex: 0 0 auto;
+    width: auto;
+    margin-right: 10px;
+    }
+    .plusbtnn{
+      display: none;
+    }
+    .overflow-scrolling {
+      overflow-x: scroll;
+      
+    }
+    }
+  /* for tab 2 */
+
+.dbba1{
+ 
+  height: 800px;
+  width: 100%;
+  padding: 0px 29px 19px 29px;
+  background-color: #e3e8ee;
+
+}
+.dbba2{
+  width: 100%;
+  height: 800px;
+  
+  background-color: white;
+  padding: 19px 29px 19px 29px;
+}
+
+
+.dbba3{
+ 
+  height: 800px;
+  width: 100%;
+  padding: 0px 29px 19px 29px;
+  background-color: #e3e8ee;
+
+}
+.dbba4{
+  width: 100%;
+  height: 800px;
+  
+  background-color: white;
+  padding: 19px 29px 19px 29px;
+}
+
+
+/* for 3rd tab */
+.overflow-scrolling{
+  width: 100%;
+}
+
+.demoimgebox{
+  border: 1px solid rgb(201, 199, 199);
+  border-radius: 4px;
+  background-color: #f7f9fa;
+  
+}
+.bnclr{
+  background-color: #c5c6c7;
+}
